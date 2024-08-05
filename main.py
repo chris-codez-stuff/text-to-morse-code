@@ -58,10 +58,6 @@ CODE = {
 
 letters = [letter.upper() for letter in list(input("Enter the text: "))]
 
-morse_code = []
+morse_code = [CODE[letter] for letter in letters]
 
-for letter in letters:
-    morse_code.append(CODE[letter])
-
-
-print(" ".join(morse_code))
+print(f"Morse Code: {" ".join(morse_code)}")
