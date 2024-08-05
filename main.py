@@ -55,3 +55,13 @@ CODE = {
     "@": ".__._.",
     " ": "/"
 }
+
+letters = [letter.upper() for letter in list(input("Enter the text: "))]
+
+morse_code = []
+
+for letter in letters:
+    morse_code.append(CODE[letter])
+
+
+print(" ".join(morse_code))
